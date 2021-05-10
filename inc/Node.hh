@@ -22,7 +22,7 @@ class Node{
      */
     int rank;
     /**
-     * @brief Wskaźnik na następny element(używane przy sortowaniu kubełkowym)
+     * @brief Wskaźnik na następny element(używane przy listach)
      * 
      */
     Node *next;
@@ -33,6 +33,7 @@ public:
      * Tworzy obiekt z rankingiem 0 i pustym tytułem
      */
     Node(){title=""; rank=0; next=nullptr;};
+    //Node(const Node & n){rank=n.rank; title=n.title;};
     /**
      * @brief Konstruktor dwuparametryczny
      * 
@@ -54,6 +55,18 @@ public:
      * @return const std::string& - tytul filmu
      */
     const std::string & get_title() const{return this->title;};
+    /**
+     * @brief Ustawia wskaźnik na następny obiekt
+     * 
+     * @param n - następny obiekt
+     */
+    void set_next(Node * n) {this->next=n;};
+    /**
+     * @brief Zwraca wskaźnik na następny obiekt
+     * 
+     * @return Node* - wskaźnik na następny obiekt
+     */
+    Node * get_next() const {return this->next;};
 };
 
 

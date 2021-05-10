@@ -13,7 +13,7 @@
  * ponieważ ranking jest liczbą całkowitą z zakresu od 1 do 10.
  * 
  * @param table - tablica do posortowania
- * @param n - liczba kubełków 
+ * @param n - rozmiar tablicy
  */
-void bucket_sort(Node table[],int n);
+Node * bucket_sort(Node *table, int n);
 #endif

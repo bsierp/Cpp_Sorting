@@ -18,5 +18,5 @@
  * @param l - indeks pierwszego elementu w tablicy głównej
  * @param r - indeks ostatniego elemetnu w tablicy głównej
  */
-void quick_sort(Node table[],int l, int r);
+void quick_sort(Node *table,int l, int r);
 #endif

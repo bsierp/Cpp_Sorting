@@ -14,7 +14,7 @@
  * @param m - indeks w tablicy głównej, na którym ma się kończyć pierwsza podtablica
  * @param r - indeks w tablicy głównej, na którym ma się kończyc druga podtablica
  */
-void merge(Node table[], int l, int m, int r);
+void merge(Node *table[], int l, int m, int r);
 /**
  * @brief Funkcja sortująca tablice przy użyciu scalania
  * 
@@ -25,5 +25,5 @@ void merge(Node table[], int l, int m, int r);
  * @param l - indeks w tablicy głównej, od którego zaczyna się pierwsza podtablica
  * @param r - indeks w tablicy głównej, na którym ma się kończyc druga podtablica
  */
-void merge_sort(Node table[], int l, int r);
+void merge_sort(Node *table, int l, int r);
 #endif
