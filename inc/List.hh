@@ -6,6 +6,7 @@
  * 
  */
 #include "Node.hh"
+#include <stdexcept>
 /**
  * @brief Model listy jednokierunkowej
  * 
@@ -35,7 +36,7 @@ public:
      * @param t - tytuł filmu
      * @param r - ranking filmu
      */
-    //void insert(std::string t, int r);
+    void insert(std::string t, int r);
     /**
      * @brief Metoda dodaje element na koniec listy
      * 
@@ -60,6 +61,8 @@ public:
      * @return Node* - wskaźnik do ostatniego obiektu
      */
     Node * get_last() const {return this->last;};
+    void filter();
+    Node * pop();
     
 };
 

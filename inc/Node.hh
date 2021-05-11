@@ -33,7 +33,6 @@ public:
      * Tworzy obiekt z rankingiem 0 i pustym tytułem
      */
     Node(){title=""; rank=0; next=nullptr;};
-    //Node(const Node & n){rank=n.rank; title=n.title;};
     /**
      * @brief Konstruktor dwuparametryczny
      * 
