@@ -29,15 +29,19 @@ void List::join(List l){
     this->last=l.get_last();
     }
 }
-Node * List::pop(){
+Node * List::to_array(long int n){
+    Node * tab = new Node[n];
     if(this->first==nullptr)
-    throw std::underflow_error("Kolejka jest pusta");
-    else
-    {
-        Node *temp;
+    throw std::underflow_error("Lista jest pusta");
+    else{
+        Node * temp;
         temp = this->first;
-        this->first = temp->get_next();
-        return temp;
+        for(long int i=0;i<n;i++)
+        {
+            tab[i] = *temp;
+            temp=temp->get_next();
+        }
+        return tab;
     }
 }
 void List::filter(){
@@ -45,7 +49,6 @@ void List::filter(){
         Node * temp1 = this->first;
         Node * temp2,*temp3;
         while(temp1!=nullptr){
-            //std::cout<<temp1->get_title()<<":"<<temp1->get_rank()<<std::endl;
             if(this->first->get_rank()==0){
             this->first = this->first->get_next();
             delete temp1;
@@ -56,6 +59,7 @@ void List::filter(){
                     this->last = temp3;
                     delete temp1;
                     return;
+                    
                 }
                 else
                     return;

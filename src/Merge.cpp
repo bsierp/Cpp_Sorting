@@ -11,10 +11,10 @@ void merge(Node *table, int l, int m, int r){
     Node *tab1 = new Node[elem1];
     Node *tab2 = new Node[elem2];
     //Tworzymy dwa podciągi, wypełniamy je elementami z ciągu oryginalnego
-    for (int i=0;i<elem1;++i){
+    for (long int i=0;i<elem1;++i){
         tab1[i] = table[l+i];
     }
-    for (int i=0;i<elem2;++i){
+    for (long int i=0;i<elem2;++i){
         tab2[i] = table[m+1+i];
     }
     int i=0,j=0,k=l;

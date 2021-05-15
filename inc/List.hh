@@ -1,7 +1,7 @@
 #ifndef LIST_HH
 #define LIST_HH
 /**
- * @file Node.hh
+ * @file List.hh
  * @brief Plik zawiera definicję klasy List oraz deklaracje jej metod
  * 
  */
@@ -62,7 +62,7 @@ public:
      */
     Node * get_last() const {return this->last;};
     void filter();
-    Node * pop();
+    Node * to_array(long int n);
     
 };
 

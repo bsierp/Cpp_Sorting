@@ -5,6 +5,7 @@
  * @brief Plik zawiera deklaracje funkjci używanych w procesie sortowania kubełkowego
  * 
  */
+#define MAX_LIST_SIZE 51731
 #include "List.hh"
 /**
  * @brief Funkcja sortująca tablice przy użyciu sortowania kubełkowego
@@ -15,5 +16,5 @@
  * @param table - tablica do posortowania
  * @param n - rozmiar tablicy
  */
-Node * bucket_sort(Node *table, int n);
+void bucket_sort(List *l,long int n);
 #endif
